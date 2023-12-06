@@ -11,10 +11,14 @@ A simple Python simulation of the solar system using the Pygame library. This pr
 ## Planets Included
 
 - **Sun:** Yellow star at the center.
-- **Earth:** Blue planet with an orbit around the Sun.
-- **Mars:** Red planet with its own orbit.
 - **Mercury:** Gray planet with a unique orbit.
 - **Venus:** White planet with its orbit around the Sun.
+- **Earth:** Blue planet with an orbit around the Sun.
+- **Mars:** Red planet with its own orbit.
+- **Jupiter:** Massive gas giant with a significant influence on other planets.
+- **Saturn:** Iconic ringed planet, influencing nearby celestial bodies.
+- **Uranus:** Ice giant with distinct rotational characteristics.
+- **Neptune:** Blue ice giant, the farthest known planet from the Sun.
 
 ## How to Run
 
