@@ -4,7 +4,7 @@ import math
 pygame.init()
 
 # Set up window dimensions
-WIDTH, HEIGHT = 800, 800
+WIDTH, HEIGHT = 1920, 1080
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 COLOUR = (0, 0, 0)
 pygame.display.set_caption("Solar System")
@@ -110,7 +110,21 @@ def main():
     venus = Planet(0.723 * Planet.AU, 0, 14, (255, 255, 255), 4.8685 * 10**24)
     venus.y_vel = -35.02 * 1000
 
-    planets = [sun, earth, mars, mercury, venus]
+    jupiter = Planet(5.203 * Planet.AU, 0, 20, (255, 165, 0), 1.898 * 10**27)
+    jupiter.y_vel = -13.06 * 1000
+
+    saturn = Planet(9.537 * Planet.AU, 0, 18, (210, 180, 140), 5.683 * 10**26)
+    saturn.y_vel = -9.68 * 1000
+
+    uranus = Planet(19.191 * Planet.AU, 0, 15, (135, 206, 250), 8.681 * 10**25)
+    uranus.y_vel = -6.8 * 1000
+
+    neptune = Planet(30.05 * Planet.AU, 0, 14, (0, 0, 128), 1.024 * 10**26)
+    neptune.y_vel = -5.43 * 1000
+
+    planets = [sun, earth, mars, mercury, venus, jupiter, saturn, uranus, neptune]
+
+
 
     while run:
         clock.tick(60)
@@ -130,4 +144,5 @@ def main():
     pygame.quit()
 
 # Run the main function
-main()
+if __name__ == '__main__':
+    main()
